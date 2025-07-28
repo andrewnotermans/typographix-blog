@@ -41,6 +41,8 @@ nav {
 
 .nav-left h1{
     font-size: 3rem;
+    color: rgb(51, 51, 51);
+    margin: 15px 0;
 }
 
 #navbar.scrolled .nav-left h1 {
@@ -64,13 +66,12 @@ nav {
 
 .featured-article h1 {
     font-size: 2.5rem;
-    color: rgb(33, 33, 33);
-    margin: 15px 0;
+    
 }
 
 .featured-article p {
     font-size: 1.2rem;
-    color: rgb(55, 55, 55);
+    color: rgb(85, 85, 85);
     margin-bottom: 20px;
 }
 
@@ -95,8 +96,15 @@ nav {
 
 .article p {
     font-size: 1rem;
-    color: rgb(66, 66, 66);
+    color: rgb(85, 85, 85);
+    display: -webkit-box;
+  -webkit-line-clamp: 5; /* Nombre de lignes max */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
+
 
 a {
     text-decoration: none;
@@ -110,7 +118,7 @@ a:hover {
 
 /* Footer */
 footer {
-    color:rgb(33, 33, 33);
+    color:rgb(51, 51, 51);
     padding: 20px 0;
     display: flex;
     flex-direction: column;
